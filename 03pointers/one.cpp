@@ -1,22 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int* myFunction(int cups){
-    int* arr = new int[cups];
+int *myFunction(int cups){
+    int *arr = new int[cups];
 
-    for(int i=0; i<cups; i++){
-        arr[i] = i+1;
+    for (int i = 0; i < cups; i++)
+    {
+        arr[i] = i + 1;
     }
 
     return arr;
 }
 
 int main(){
-    int* myArr = myFunction(5);
+    int *myArr = myFunction(5);
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+    {
         cout << myArr[i] << " ";
     }
-    delete[] myArr;       
+    delete[] myArr;
     return 0;
 }
